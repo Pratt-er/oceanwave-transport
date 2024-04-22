@@ -151,7 +151,9 @@ header, footer {
 
 .item {
   flex: 1; /* Equal width for all items */
-  padding: 20px;
+  padding: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center items horizontally */
@@ -490,6 +492,7 @@ header, footer {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Further adjust gallery grid for smaller screens */
   }
+  
   
 }
 @media screen and (max-width: 690px) {

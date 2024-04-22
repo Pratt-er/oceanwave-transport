@@ -74,14 +74,14 @@ textarea {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #3f433f;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #151a15;
 }
 
 input[type="text"],

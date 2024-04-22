@@ -12,7 +12,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Set up static files directory
+// Set up static files directorys
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Set up routes

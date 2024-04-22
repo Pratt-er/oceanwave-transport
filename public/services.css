@@ -63,7 +63,34 @@
     background-color: #2d2e2e; /* Darker shade on hover */
     text-decoration: none;
   }
-  
+/* Service Section */
+.service {
+  max-width: 800px; /* Set maximum width */
+  margin: 0 auto 50px; /* Center service and add margin at the bottom */
+  text-align: center; /* Center align service content */
+  font-size: 24px; /* Increase font size */
+  padding: 30px; /* Add padding */
+  font-family:Georgia, 'Times New Roman', Times, serif; /* Use a more professional font family */
+  color: #333; /* Set font color */
+}
+
+.service img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add space below images */
+}
+
+.service h3 {
+  font-size: 32px; /* Increase heading font size */
+  font-weight: bold;
+  margin-bottom: 15px; /* Increase margin below heading */
+}
+
+.service p {
+  font-size: 22px; /* Increase paragraph font size */
+  line-height: 1.6; /* Increase line height */
+}
+
   /* Second Section */
   .second-section {
     display: flex;
@@ -179,7 +206,38 @@
     .background-image {
       padding: 20px; /* Adjust padding for smaller screens */
     }
+    .third-right img {
+      width: 350px; /* Set width to 500px */
+      height: 380px; /* Set height to 500px */
+      object-fit: cover; /* Maintain aspect ratio without stretching */
+      border-radius: 10px; /* Add border radius */
+      margin-left: 15px;
+      margin-top: 15px;
+    }
   }
+/* 
+  @media screen and (min-width: 743px) and (max-width: 1120px) {
+   
+    .third-right img {
+      width: 350px; 
+      height: 380px; 
+      object-fit: cover; 
+      border-radius: 10px; 
+      margin-left: 35px;
+      margin-top: 15px;
+    }
+  }
+  @media screen and (min-width: 743px) and (max-width: 743px) {
+   
+    .third-right img {
+      width: 350px; 
+      height: 380px; 
+      object-fit: cover; 
+      border-radius: 10px; 
+      margin-left: 35px;
+      margin-top: 15px;
+    }
+  } */
   /* Service Section */
 .service {
   margin-bottom: 30px; /* Add margin between services */
@@ -206,11 +264,15 @@
   line-height: 1.5;
 }
 
+/* Third Right Image */
+.third-right {
+  text-align: center; /* Center align content */
+}
+
 .third-right img {
-  width: 380px; /* Set width to 500px */
-  height: 380px; /* Set height to 500px */
-  object-fit: cover; /* Maintain aspect ratio without stretching */
-  border-radius: 10px; /* Add border radius */
-  margin-left: 15px;
-  margin-top: 15px;
+  max-width: 100%; /* Ensure image responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add border radius to images */
+  margin: 0 auto 20px; /* Add margin for spacing and centering */
+  display: block; /* Ensure proper centering */
 }
