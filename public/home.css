@@ -1,0 +1,502 @@
+/* home.css */
+
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+
+}
+
+header, footer {
+  margin: 0; /* Remove margin for header and footer */
+  padding: 0; /* Remove padding for header and footer */
+}
+
+/* Add this rule to remove margin and padding for all sections */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: navy; /* Change to navy blue */
+  color: white; /* Text color */
+}
+
+.logo img {
+  width: 100px; /* Adjust the width of the logo */
+}
+
+.navigation {
+  text-align: right;
+}
+
+.content-section {
+  margin-left: 0; /* Remove left margin */
+  color: white; /* Text color */
+}
+
+/* CSS */
+
+/* Define keyframes for background image transition */
+@keyframes changeBackground {
+  0% { opacity: 0; }
+  33.33% { opacity: 1; }
+  66.66% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* Apply animation to the .first-section */
+.first-section {
+  background-size: cover; /* Cover the entire section with the background image */
+  background-position: center; /* Center the background image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e8e8e8;
+  margin-top: -50px; /* Add a negative top margin to move the section up */
+  padding: 20px; /* Add padding for better spacing */
+  height: auto; /* Set height to auto */
+}
+
+
+
+/* Set the background images */
+.first-section {
+  background-image: url('/images/home-background1.jpg'); /* Initial background image */
+  background-size: cover;
+  height: 70vh; /* Adjust the height as needed */
+
+  transition: background-image 5s ease-in-out; /* Transition for background image change */
+}
+
+.second-image {
+  background-image: url('/images/home-background2.jpg'); /* Second background image */
+}
+
+.third-image {
+  background-image: url('/images/home-background3.jpg'); /* Third background image */
+}
+
+
+
+.second-section {
+  display: flex;          
+  justify-content: center;
+  
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+  padding: 20px;
+  margin: 0 8px 0 0; /* Adjust margin to remove space on the left side */
+  background-color: rgb(233, 233, 238);
+  color: rgb(2, 2, 2);
+  text-align: center;
+  height: 250px;
+  position: relative;
+  top: -60px;
+  width: 320px;
+  border-radius: 5px;
+}
+
+.third-section {
+  display: flex;
+  padding: 20px;
+  background-color: rgb(252, 251, 251);
+}
+
+.row {
+  display: flex;
+  height: 50vh;
+  
+}
+/* .item {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+} */
+
+
+.item h3,
+.item p {
+  line-height: 1.5; /* Adjust line height for better readability */
+  font-style: italic; /* Apply italic font style */
+}
+
+
+.logo-container i {
+  font-size: 3em; /* Increase icon size */
+  margin-bottom: 10px; /* Add space below the icon */
+  color: rgb(46, 99, 175);
+  
+}
+
+.item {
+  flex: 1; /* Equal width for all items */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center align text */
+  margin: 0 10px; /* Add space between items */
+}
+
+.third-right {
+  width: 40%; /* Adjust width to take up 40% of the container */
+  margin-left: 200px; /* Add space between the left and right sections */
+ 
+
+}
+
+.third-right img {
+  max-width: 100%; /* Make sure the image fits its container */
+  height: 100vh;
+}
+
+/* home.css */
+.fourth-section {
+  padding: 20px;
+  color: rgb(22, 22, 22);
+  background-color: #f7f5f5;
+  height: 70vh; /* Set the height to 50% of the viewport height */
+  position: relative;
+}
+
+.testimonies-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative; /* Add position relative */
+  margin-bottom: 20px; /* Add spacing below the section */
+  font-family:'Montserrat', sans-serif;
+
+}
+
+.testimonies-image {
+  text-align: center; /* Center the image */
+}
+
+.testimonies-image img {
+  width: 200px; /* Set width to 200px */
+  height: 200px; /* Set height to 200px */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 20px; /* Add spacing below the image */
+  object-fit: cover; /* Cover the entire frame with the image */
+}
+
+.testimonies-content {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Apply a professional font */
+  line-height: 1.5; /* Adjust line height */
+}
+.testimonies-header {
+  margin-bottom: 20px; /* Add spacing below the header */
+}
+
+
+.testimonies-content h3 {
+  margin-bottom: 10px; /* Add spacing below the heading */
+  font-size: 20px; /* Set font size for heading */
+}
+
+.testimonies-content p {
+  margin-bottom: 10px; /* Add spacing below paragraphs */
+  font-size: 16px; /* Set font size for paragraphs */
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 20px;
+}
+
+.right-arrow {
+  right: 20px;
+}
+
+.about-us-content {
+  flex: 1;
+  height: auto;
+  padding: 20px; /* Add padding for better spacing */
+  font-family: 'Montserrat', sans-serif; /* Apply a professional font */
+  line-height: 1.6; /* Adjust line height */
+}
+
+.about-us-content h2 {
+  font-size: 24px; /* Increase font size for the heading */
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.about-us-content p {
+  font-size: 16px; /* Set font size for paragraphs */
+  margin-bottom: 10px; /* Add spacing below paragraphs */
+}
+
+
+
+
+
+
+.left-arrow {
+  left: 20px; /* Set initial position */
+  z-index: 1; /* Ensure the arrow is above other content */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.right-arrow {
+  right: 20px; /* Set initial position */
+  z-index: 1; /* Ensure the arrow is above other content */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+
+
+.circle {
+  width: 20px; /* Increase the size of the circles for better visibility */
+  height: 20px; /* Increase the size of the circles for better visibility */
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+
+.map-container {
+  flex: 1;
+  position: relative;
+  height: auto;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+.zoom-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.zoom-controls button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.fifth-section {
+  padding: 20px;
+  color: rgb(22, 22, 22);
+  background-color: #f7f5f5;
+  display: flex;
+  align-items: center;
+}
+
+
+.sixth-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery {
+  width: 48%; /* Adjusted width to increase gallery width */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 0; /* Remove the gap between grid items */
+}
+
+.faq {
+  width: 48%; /* Adjusted width to increase FAQ width */
+}
+
+.grid-item img {
+  width: 100%; /* Make images fill the grid items */
+}
+
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question p {
+  font-size: 16px;
+}
+
+.seventh-section {
+  padding: 20px;
+  overflow: hidden; /* Hide overflowing content */
+  background-color: #d4d4d4;
+}
+
+.scrolling-picture-container {
+  width: 100%; /* Set container width */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.scrolling-picture-container img {
+  animation: scroll 20s linear infinite; /* Define animation */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left */
+  }
+}
+
+
+@keyframes scroll {
+  0% {
+      transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+      transform: translateX(-100%); /* End at the left */
+  }
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 1024px) {
+  /* Adjust styles for screens up to 1024px width */
+  .flex-item {
+    width: calc(50% - 40px); /* Make flex items 50% width with some spacing */
+    margin: 0 20px 20px; /* Add spacing between flex items */
+  }
+
+  .third-right {
+    width: 100%; /* Make the right section full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .second-section {
+    flex-direction: column; /* Stack flex items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for screens up to 768px width */
+  .logo img {
+    width: 80px; /* Reduce logo size for smaller screens */
+  }
+
+  .navigation {
+    text-align: center; /* Center align navigation links */
+    margin-top: 10px; /* Add space between logo and navigation */
+  }
+
+  .header {
+    padding: 10px; /* Reduce header padding */
+  }
+
+ 
+
+  .third-right {
+    width: 100%; /* Make the right section full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .first-section {
+    padding: 10px; /* Reduce padding in first section */
+  }
+  .third-section{
+    margin-left: -30px;
+   }
+  .testimonies-section {
+    padding: 10px; /* Reduce padding in testimonies section */
+  }
+
+  .map-container {
+    padding: 10px; /* Reduce padding in map container */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust gallery grid for smaller screens */
+  }
+
+  .faq {
+    max-width: 100%; /* Make FAQ section full width */
+    margin-top: 10px; /* Add space between sections */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Adjust styles for screens up to 576px width */
+  .logo img {
+    width: 60px; /* Further reduce logo size for smaller screens */
+  }
+
+ .third-section{
+  margin-left: -30px;
+ }
+
+  .navigation {
+    margin-top: 5px; /* Further reduce space between logo and navigation */
+  }
+
+  .header {
+    padding: 5px; /* Further reduce header padding */
+  }
+
+  .first-section {
+    padding: 5px; /* Further reduce padding in first section */
+  }
+
+  .testimonies-section {
+    padding: 5px; /* Further reduce padding in testimonies section */
+  }
+
+  .map-container {
+    padding: 5px; /* Further reduce padding in map container */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Further adjust gallery grid for smaller screens */
+  }
+  
+}
+@media screen and (max-width: 690px) {
+  .third-right {
+    display: none;
+  }
+}
+
+
+

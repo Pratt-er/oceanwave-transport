@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            margin: 0;
+            color: white;
+        }
+
+        .logo-container {
+            background-color: white;
+            padding: 15px; 
+            margin: 0; /* Remove margin */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative; /* Make container relative for absolute positioning */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative; /* Make container relative for absolute positioning */
+        }
+
+        .logo img {
+            width: 300px;
+            height: 150px;
+        }
+
+        .logo-text {
+            position: absolute;
+            top: 77%; /* Adjust top position */
+            left: 50%; /* Adjust left position */
+            transform: translate(-50%, -50%); /* Center the text */
+            text-align: center; /* Center align the text */
+            border: 2px solid white; /* Add border with white color */
+            background-color: white; /* Set background color */
+            padding: 10px; /* Add padding for better visibility */
+        }
+
+        .oceanwave {
+            color: darkgreen; /* Set text color */
+            font-weight: bold; /* Set font weight */
+            font-style: italic; /* Set font style */
+            font-size: 24px; /* Set font size */
+            margin: 0; /* Remove margin */
+            text-decoration: none;
+        }
+
+        .tagline {
+            font-size: 14px; /* Set font size */
+            margin: 0; /* Remove margin */
+            color: rgb(1, 35, 1); /* Set text color */
+        }
+
+        .oceanwave,
+        .tagline {
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        .tagline::before {
+            content: " | "; /* Add separator before tagline */
+            margin-right: 10px; /* Adjust spacing */
+        }
+
+        .contact-info {
+            color: rgb(26, 73, 144);
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        nav {
+            padding: 25px 0;
+            padding-bottom: 40px;
+            position: relative;
+            height: 30px;
+            left: 0;
+            right: 0;
+            animation: changeColor 8s infinite; /* Change color every 8 seconds */
+            text-decoration: none;
+        }
+
+        @keyframes changeColor {
+            0% { background-color: rgb(0, 49, 84); } /* Initial color */
+            25% { background-color: rgb(24, 33, 56); } /* Color 1 */
+            50% { background-color: rgb(39, 38, 34); } /* Color 2 */
+            75% { background-color: rgb(25, 34, 25); } /* Color 3 */
+            100% { background-color: rgb(44, 62, 118); } /* Color 4 */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+color: rgb(229, 187, 136);        }
+
+        /* Media Query for Screen Width 768px and Below */
+        @media screen and (max-width: 768px) {
+            .logo-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info {
+                margin-top: 10px;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="/images/ship.png" alt="Your Logo">
+                <div class="logo-text">
+                    <p class="oceanwave">OCEANWAVE TRANSPORT</p>
+                    <p class="tagline">Navigating Waves, Connecting Worlds</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>Phone: +123456789</p>
+                <p>Email: info@yourshippingcompany.com</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/trackgoods">Track Goods</a></li>
+            <li><a href="/contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

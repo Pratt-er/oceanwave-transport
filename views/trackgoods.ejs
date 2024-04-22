@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track | oceanwavetransport</title>
+  <link rel="stylesheet" href="/track.css"> 
+</head>
+<body>
+  <header><%- include('./partials/header'); %></header>
+  <div class="first-section">
+    <div class="background-image" style="background-image: url('/images/about-background1.jpg');">
+      <div class="overlay"></div>
+      <h2>Oceanwave Transport</h2>
+      <p>Oceanwave Transport is a leading logistics and transportation company dedicated to providing reliable and efficient services to connect businesses worldwide. With a commitment to excellence, we offer a wide range of logistics solutions tailored to meet the unique needs of our clients.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Image before the tracking number search field -->
+    <img src="/images/contact-3.jpg" alt="Before Search Image">
+
+    <h1>Enter Tracking Number</h1>
+    <form id="trackingForm">
+      <label for="trackingNumber">Tracking Number:</label>
+      <input type="text" id="trackingNumber" name="trackingNumber" required />
+      <button type="submit">Track</button>
+    </form>
+
+    <!-- Image after the tracking number search field -->
+    <img src="/images/contact-4.jpg" alt="After Search Image">
+
+    <div id="result"></div>
+  </div>
+
+  <footer><%- include('./partials/footer'); %></footer>
+</body>
+</html>

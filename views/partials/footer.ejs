@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <style>
+    /* Footer CSS */
+    .footer {
+      background-color: #71767e;
+      color: #272626;
+      padding-left: 30px;
+      padding-right: 30px;
+
+      padding-top: 80px;
+      
+      height: 60vh;
+    }
+
+    .footer-section {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .footer-column {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .footer-column h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      color:white;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .footer-copyright {
+  text-align: center;
+  margin-top: 100px; /* Add some top margin for spacing */
+  color: #272626;
+}
+
+
+
+        .logo {
+            display: flex;
+            align-items: center;
+            position: relative; /* Make container relative for absolute positioning */
+        }
+
+        .logo img {
+            width: 300px;
+            height: 150px;
+        }
+
+        .logo-text {
+    position: absolute;
+    top: 77%; /* Adjust top position */
+    left: 50%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align the text */
+    border: 2px solid white; /* Add border with white color */
+    background-color: white; /* Set background color */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+.logo-text2 {
+    position: absolute;
+    top: 79%; /* Adjust top position */
+    left: 45%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align the text */
+    border: 2px solid #71767e;/* Add border with white color */
+    background-color: #71767e; /* Set background color */
+    padding: 10px; /* Add padding for better visibility */
+    margin-left: -6px; /* Adjust the left margin */
+
+}
+        .oceanwave {
+            color: darkgreen; /* Set text color */
+            font-weight: bold; /* Set font weight */
+            font-style: italic; /* Set font style */
+            font-size: 24px; /* Set font size */
+            margin: 0; /* Remove margin */
+            text-decoration: none;
+        }
+
+        .logo-text2 {
+  display: flex; /* Use flexbox for better alignment */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.oceanwave-1 {
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  margin: 0;
+  text-decoration: none;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+        .tagline {
+            font-size: 14px; /* Set font size */
+            margin: 0; /* Remove margin */
+            color: rgb(1, 35, 1); /* Set text color */
+
+        }
+
+        .oceanwave,
+        .tagline {
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        .tagline::before {
+            content: " | "; /* Add separator before tagline */
+            margin-right: 10px; /* Adjust spacing */
+        }
+
+        .contact-info {
+            color: rgb(26, 73, 144);
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    ul li a {
+      color: #272626;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+    /* Media Query for a range of screen sizes */
+@media screen and (min-width: 779px) and (max-width: 1286px) {
+  /* Add your styles here */
+  .logo-text2 {
+    position: absolute;
+    top: 79%; /* Adjust top position */
+    left: 45%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align the text */
+    border: 2px solid #71767e;/* Add border with white color */
+    background-color: #71767e; /* Set background color */
+    padding: 10px; /* Add padding for better visibility */
+    margin-left: 17px; /* Adjust the left margin */
+
+}
+}
+
+      @media screen and (max-width: 779px) {
+  .footer-section {
+    flex-direction: column; /* Stack footer columns vertically */
+    align-items: center; /* Center align footer content */
+  }
+
+  .footer-column {
+    margin-bottom: 20px; /* Add space between footer columns */
+    text-align: center; /* Center align text in footer columns */
+  }
+
+  .footer-column h3 {
+    margin-bottom: 10px; /* Add spacing below footer column headings */
+  }
+
+  .footer {
+    padding-top: 40px; /* Reduce top padding for footer */
+    height: 130vh; /* Set smaller height for footer */
+    background-color: #71767e; /* Set background color */
+  }
+
+  .logo-text2 {
+    position: absolute;
+    top: 79%; /* Adjust top position */
+    left: 45%; /* Adjust left position */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center align the text */
+    border: 2px solid #71767e;/* Add border with white color */
+    background-color: #71767e; /* Set background color */
+    padding: 10px; /* Add padding for better visibility */
+    margin-left: 15px; /* Adjust the left margin */
+
+}
+}
+
+  </style>
+</head>
+<body>
+  <footer class="footer">
+    <div class="footer-section">
+      <div class="footer-column">
+        <div class="logo">
+          <img src="/images/footer-image4.png" alt="Your Logo">
+          <div class="logo-text2">
+              <p class="oceanwave-1">OCEANWAVE TRANSPORT</p>
+              <p class="tagline">Navigating Waves, Connecting Worlds</p>
+          </div>
+      </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Track Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Company Services</h3>
+        <ul>
+          <li><a href="#">Ground Shipping</a></li>
+          <li><a href="#">International Air Freight</a></li>
+          <li><a href="#">Seaport Way</a></li>
+          <li><a href="#">Warehousing</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Company</h3>
+        <p>21 E. Valley Stream Blvd.<br>Valley Stream, NY 11580, USA</p>
+        <p>Phone: +1 (409) 908-4363</p>
+        <p>Email: info@oceanwavetransport.net</p>
+        <p>Opening Time: 10am - 5pm (Mon - Fri)</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      Copyright © 2006 - 2024 Oceanwave Courier. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

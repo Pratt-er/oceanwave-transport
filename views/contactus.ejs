@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | oceanwavetransport</title>
+    <link rel="stylesheet" href="/contact.css" />
+    <!-- Link to your about.css file -->
+  </head>
+  <body>
+    <header><%- include('./partials/header'); %></header>
+    <div class="first-section">
+      <div
+        class="background-image"
+        style="background-image: url('/images/about-background1.jpg')"
+      >
+        <div class="overlay"></div>
+        <h2>Oceanwave Transport</h2>
+        <p>
+          Oceanwave Transport is a leading logistics and transportation company
+          dedicated to providing reliable and efficient services to connect
+          businesses worldwide. With a commitment to excellence, we offer a wide
+          range of logistics solutions tailored to meet the unique needs of our
+          clients.
+        </p>
+        <!-- <ul class="btn-container">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+          </ul> -->
+      </div>
+      <div class="contact-infos">
+        <h3>Contact Information</h3>
+        <p>Address: 123 Oceanwave Street, City, Country</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: info@oceanwavetransport.com</p>
+    </div>
+      <form action="/home" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+      <footer><%- include('./partials/footer'); %></footer>
+    </div>
+  </body>
+</html>

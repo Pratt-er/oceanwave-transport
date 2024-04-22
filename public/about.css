@@ -1,0 +1,526 @@
+
+
+
+ /* First Section */
+.first-section {
+    position: relative;
+    height: 60vh; /* Adjust the height as needed */
+  }
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
+
+}
+
+header, footer {
+    margin: 0; /* Remove margin for header and footer */
+    padding: 0; /* Remove padding for header and footer */
+}
+
+/* Add this rule to remove margin and padding for all sections */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+  .background-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 50px;
+    color: white;
+    height: 100%; /* Use 100% height to cover the entire section */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(72, 71, 71, 0.5); /* Semi-transparent overlay */
+  }
+  
+  .btn-container {
+    position: absolute;
+    bottom: 20px; /* Adjust the distance from the bottom */
+    left: 50%; /* Center the buttons horizontally */
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    margin-top: 20px; /* Add margin top */
+  }
+  
+  .btn-container li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between buttons */
+  }
+  
+  .btn-container li a {
+    display: inline-block;
+    padding: 7px 10px;
+    color: #434649; /* Button text color */
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  .btn-container li a:hover {
+    color: #b0b2b4; /* Darker shade on hover */
+  }
+  
+/* Second Section */
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    margin-top: 150px;
+  }
+  
+  .second-section-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .image-container {
+    flex: 1;
+    margin-right: 20px;
+    margin-top: 50px; /* Adjust the top margin to bring the image lower */
+  }
+  
+  .content-container {
+    flex: 1;
+    margin-left: 20px; /* Bring content closer to the image */
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content-container h2 {
+    font-size: 36px; /* Increase font size for heading */
+    margin-bottom: 20px;
+    color: #333; /* Adjust font color */
+  }
+  
+  .content-container p {
+    font-size: 18px; /* Increase font size for paragraphs */
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666; /* Adjust font color */
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  .btn-container li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .btn-container li:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+  }
+  
+  .btn-container li a {
+    display: inline-block;
+    padding: 12px 24px; /* Increase padding for buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-container li a:hover {
+    background-color: #2d2e2e; /* Darker shade on hover */
+    text-decoration: none;
+
+  }
+ 
+  /* Third Section */
+.third-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Set flex-direction to row to display side by side */
+    padding: 50px 0;
+  }
+  
+  .mission-container,
+  .growth-container {
+    flex: 0 1 45%; /* Set flex-basis to 45% to reduce width */
+    text-align: center;
+    margin: 0 10px; /* Add margin for spacing */
+  }
+  
+  .mission-details,
+  .growth-details {
+    margin-top: 20px;
+  }
+  
+  .mission-details p,
+  .growth-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Fourth Section */
+.fourth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Set flex-direction to row to display side by side */
+    padding: 50px 0;
+  }
+  
+  .technology-image {
+    flex: 0 1 50%; /* Set flex-basis to 50% for the image container */
+  }
+  
+  .technology-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .technology-details {
+    flex: 0 1 50%; /* Set flex-basis to 50% for the details container */
+    padding-left: 20px; /* Add padding for spacing */
+  }
+  
+  .technology-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .technology-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+ /* Fifth Section */
+.fifth-section {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .team-container {
+    display: flex;
+    justify-content: flex-start; /* Start from the beginning */
+    align-items: center;
+    padding: 20px 0; /* Add some padding */
+  }
+  
+  /* CEO Container */
+  .ceo {
+    text-align: center;
+    margin-right: 20px; /* Adjust spacing between CEOs */
+    display: inline-block; /* Display as inline block */
+  }
+  
+  .ceo img {
+    width: 200px; /* Set a fixed width for all images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove border radius */
+    object-fit: cover; /* Ensure the image covers the entire container */
+   margin-left: 22px;
+  }
+  
+  .ceo p {
+    font-size: 18px;
+    margin-top: 10px; /* Adjust spacing between image and text */
+  }
+  
+  /* Sixth Section */
+.sixth-section {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  .sixth-section img {
+    width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+  }
+/* Fifth Section */
+.fifth-section {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+.team-container {
+  display: flex;
+  justify-content: flex-start; /* Start from the beginning */
+  align-items: center;
+  padding: 20px 0; /* Add some padding */
+}
+
+/* CEO Container */
+.ceo {
+  text-align: center;
+  margin-right: 20px; /* Adjust spacing between CEOs */
+  display: inline-block; /* Display as inline block */
+}
+
+.ceo img {
+  width: 200px; /* Set a fixed width for all images */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0; /* Remove border radius */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  margin-left: 22px;
+}
+
+.ceo p {
+  font-size: 18px;
+  margin-top: 10px; /* Adjust spacing between image and text */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .team-container {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+  }
+
+  .ceo {
+      margin-right: 0; /* Remove right margin */
+      margin-bottom: 20px; /* Add bottom margin to separate images */
+  }
+}
+
+  /* For screens smaller than 768px (e.g., smartphones) */
+@media (max-width: 768px) {
+  .first-section {
+    height: auto; /* Adjust height to fit content */
+  }
+
+  .btn-container {
+    position: relative; /* Adjust button position */
+    text-align: center; /* Center-align buttons */
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .second-section-container {
+    flex-direction: column; /* Stack image and content vertically */
+  }
+
+  .image-container,
+  .content-container {
+    margin: 0; /* Remove margins between image and content */
+  }
+
+  .image-container {
+    margin-bottom: 20px; /* Add space between image and content */
+  }
+
+  .third-section,
+  .fourth-section {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .mission-container,
+  .growth-container,
+  .technology-image,
+  .technology-details {
+    flex: 1; /* Make sections take full width */
+    margin: 0; /* Remove margins */
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .technology-image {
+    order: 2; /* Reverse order of image and details */
+    margin-top: 20px; /* Add space between sections */
+  }
+
+  .fifth-section {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 20px 0; /* Add padding */
+  }
+
+  .team-container {
+    justify-content: center; /* Center-align team members */
+  }
+
+  .ceo {
+    margin: 0 10px; /* Adjust spacing between CEOs */
+  }
+
+  .sixth-section img {
+    max-width: 100%; /* Make the image fill the container horizontally */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+.footer {
+  background-color: #71767e;
+  color: #272626;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  padding-top: 80px;
+  
+  height: 60vh;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  color:white;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-copyright {
+text-align: center;
+margin-top: 100px; /* Add some top margin for spacing */
+color: #272626;
+}
+
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+        position: relative; /* Make container relative for absolute positioning */
+    }
+
+    .logo img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .logo-text {
+position: absolute;
+top: 77%; /* Adjust top position */
+left: 50%; /* Adjust left position */
+transform: translate(-50%, -50%); /* Center the text */
+text-align: center; /* Center align the text */
+border: 2px solid white; /* Add border with white color */
+background-color: white; /* Set background color */
+padding: 10px; /* Add padding for better visibility */
+}
+
+.logo-text2 {
+position: absolute;
+top: 79%; /* Adjust top position */
+left: 45%; /* Adjust left position */
+transform: translate(-50%, -50%); /* Center the text */
+text-align: center; /* Center align the text */
+border: 2px solid #71767e;/* Add border with white color */
+background-color: #71767e; /* Set background color */
+padding: 10px; /* Add padding for better visibility */
+margin-left: -6px; /* Adjust the left margin */
+
+}
+    .oceanwave {
+        color: darkgreen; /* Set text color */
+        font-weight: bold; /* Set font weight */
+        font-style: italic; /* Set font style */
+        font-size: 24px; /* Set font size */
+        margin: 0; /* Remove margin */
+        text-decoration: none;
+    }
+
+    .logo-text2 {
+display: flex; /* Use flexbox for better alignment */
+flex-direction: column; /* Stack elements vertically */
+}
+
+.oceanwave-1 {
+color: rgb(44, 44, 44);
+font-weight: bold;
+font-style: italic;
+font-size: 22px;
+margin: 0;
+text-decoration: none;
+white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+    .tagline {
+        font-size: 14px; /* Set font size */
+        margin: 0; /* Remove margin */
+        color: rgb(1, 35, 1); /* Set text color */
+
+    }
+
+    .oceanwave,
+    .tagline {
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    .tagline::before {
+        content: " | "; /* Add separator before tagline */
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .contact-info {
+        color: rgb(26, 73, 144);
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #272626;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+  @media screen and (max-width: 768px) {
+.footer-section {
+flex-direction: column; /* Stack footer columns vertically */
+align-items: center; /* Center align footer content */
+}
+
+.footer-column {
+margin-bottom: 20px; /* Add space between footer columns */
+text-align: center; /* Center align text in footer columns */
+}
+
+.footer-column h3 {
+margin-bottom: 10px; /* Add spacing below footer column headings */
+}
+
+.footer {
+padding-top: 40px; /* Reduce top padding for footer */
+padding-bottom: 40px; /* Reduce bottom padding for footer */
+height: 100vh; /* Set smaller height for footer */
+background-color: #71767e; /* Set background color */
+}
+}
