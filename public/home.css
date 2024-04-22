@@ -325,7 +325,6 @@ header, footer {
   align-items: center;
 }
 
-
 .sixth-section {
   padding: 20px;
   display: flex;
@@ -457,6 +456,12 @@ header, footer {
     max-width: 100%; /* Make FAQ section full width */
     margin-top: 10px; /* Add space between sections */
   }
+
+  .fifth-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -492,12 +497,22 @@ header, footer {
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Further adjust gallery grid for smaller screens */
   }
+  .fifth-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
   
   
 }
 @media screen and (max-width: 690px) {
   .third-right {
     display: none;
+  }
+  .fifth-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 
